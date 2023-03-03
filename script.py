@@ -22,3 +22,5 @@ if utils.validate(player_hand):
     print('結果は' + result + 'でした')
 else:
     print('正しい数値を入力してください')
+
+
