@@ -13,3 +13,12 @@ if utils.validate(player_hand):
     # player_nameが空だった場合、ゲストユーザになる。
     if player_name == '':
         utils.print_hand(player_hand)
+    else:
+        utils.print_hand(player_hand, player_name)
+
+    utils.print_hand(computer_hand, 'コンピューター')
+
+    result = utils.judge(player_hand, computer_hand)
+    print('結果は' + result + 'でした')
+else:
+    print('正しい数値を入力してください')
